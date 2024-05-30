@@ -1,18 +1,15 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import { createI18n } from 'vue-i18n'
-import App from './App.vue'
-import pl from "./locales/pl.json"
-import en from "./locales/en.json"
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import { i18nConfig } from './composables/i18n.ts';
+import './assets/index.css';
+import Default from './layout/Default.vue';
+import router from './composables/router.ts';
 
-const pinia = createPinia()
-const i18n = createI18n({
-  locale: 'pl',
-  fallbackLocale: 'en',
-  messages: { pl, en }
-})
-const app = createApp(App)
-
-app.use(pinia)
-app.use(i18n)
-app.mount('#app')
+const { i18n } = i18nConfig();
+const pinia = createPinia();
+const app = createApp(Default);
+console.log(router.currentRoute.value);
+app.use(pinia);
+app.use(i18n);
+app.use(router);
+app.mount('#app');

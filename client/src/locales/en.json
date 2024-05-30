@@ -1,5 +1,6 @@
 {
-  "home": {
-    "helloWorld": "Hello World!"
+  "topNav" : {
+    "home": "Home",
+    "about": "About Us"
   }
 }
