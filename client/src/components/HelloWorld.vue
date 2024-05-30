@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
+defineProps<{ msg: string }>();
 
-const count = ref(0)
+const count = ref(0);
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <p>{{ $t('home.helloWorld') }}</p>
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
