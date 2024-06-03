@@ -4,7 +4,7 @@ import TopNav from '../molecules/TopNav.vue';
 import UserActions from '../molecules/UserActions.vue';
 </script>
 <template>
-  <div class="flex justify-between align-middle py-4">
+  <div class="grid grid-cols-3 justify-between align-middle py-4">
     <Logo />
     <TopNav />
     <UserActions />

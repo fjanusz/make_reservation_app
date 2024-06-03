@@ -8,7 +8,7 @@ import router from './composables/router.ts';
 const { i18n } = i18nConfig();
 const pinia = createPinia();
 const app = createApp(Default);
-console.log(router.currentRoute.value);
+
 app.use(pinia);
 app.use(i18n);
 app.use(router);

@@ -1,6 +1,10 @@
 {
   "topNav" : {
     "home": "Home",
-    "about": "About Us"
+    "about": "About Us",
+    "lang": {
+      "en": "English",
+      "pl": "Polish"
+    }
   }
 }
