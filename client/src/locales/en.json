@@ -2,9 +2,14 @@
   "topNav" : {
     "home": "Home",
     "about": "About Us",
+    "LogIn": "Log in",
     "lang": {
       "en": "English",
       "pl": "Polish"
     }
+  },
+  "metaTitle": {
+    "home": "Home",
+    "about": "About Us"
   }
 }

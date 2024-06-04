@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import Button from '../atoms/Button.vue';
-import LangSelector from './LangSelector.vue';
+import LocaleSelector from './LocaleSelector.vue';
 </script>
 <template>
   <div class="box-content flex gap-4 justify-end">
-    <LangSelector />
+    <LocaleSelector />
     <Button variant="primary">
-      {{ $t('LogIn') }}
+      {{ $t('topNav.LogIn') }}
     </Button>
   </div>
 </template>

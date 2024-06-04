@@ -1,6 +1,15 @@
 {
   "topNav" : {
     "home": "Strona Główna",
+    "about": "O Nas",
+    "LogIn": "Zaloguj się",
+    "lang": {
+      "en": "Angielski",
+      "pl": "Polski"
+    }
+  },
+  "metaTitle": {
+    "home": "Strona Główna",
     "about": "O Nas"
   }
 }

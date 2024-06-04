@@ -4,9 +4,10 @@ import en from '../locales/en.json';
 
 export const i18nConfig = () => {
   const i18n = createI18n({
-    locale: 'pl',
-    fallbackLocale: 'en',
+    locale: 'en',
+    fallbackLocale: 'pl',
     messages: { pl, en },
+    legacy: false,
   });
 
   return {

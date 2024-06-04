@@ -5,8 +5,8 @@ import './assets/index.css';
 import Default from './layout/Default.vue';
 import router from './composables/router.ts';
 
-const { i18n } = i18nConfig();
 const pinia = createPinia();
+const { i18n } = i18nConfig();
 const app = createApp(Default);
 
 app.use(pinia);
