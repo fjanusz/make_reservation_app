@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia';
 import { useBreakpoints } from '@vueuse/core';
+import { computed } from 'vue';
 
 export const useBreakPointsStore = defineStore('useBreakPointsStore', () => {
   const breakpoints = {
@@ -10,6 +11,6 @@ export const useBreakPointsStore = defineStore('useBreakPointsStore', () => {
   };
 
   return {
-    breakpoints: useBreakpoints(breakpoints),
+    breakpoints: computed(() => useBreakpoints(breakpoints)),
   };
 });
